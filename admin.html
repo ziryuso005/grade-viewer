@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Grade Entry </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="admin-login-section">
+        <h1>Admin Login</h1>
+        <input type="email" id="admin-email" placeholder="Admin email">
+        <input type="password" id="admin-password" placeholder="password">
+        <button id="admin-login-btn">Log In</button>
+        <p id="admin-login-error" style="color:  red;"></p>
+    </div>
+    
+    <p id="admin-status" style="color: red;"></p>
+
+    <div id="admin-panel-section" style="display: none;">
+        <h1>Grade Entry Panel</h1>
+        <button id="admin-logout-btn">Log Out</button>
+        <p id="admin-status"></p>  
+        
+        <div>
+    <h2>Load a Student</h2>
+    <input type="text" id="student-uid-input" placeholder="Student UID">
+    <button id="load-student-btn">Load</button>
+    <p id="load-status"></p>
+</div>
+
+<div id="grade-form-section" style="display: none;">
+    <h2>Editing: <span id="editing-student-name"></span></h2>
+    <label>Student Name: <input type="text" id="student-name-input"></label>
+    <br><br>
+
+    <div id="subjects-form"></div>
+
+    <button id="add-subject-btn">+ Add Subject Row</button>
+    <br><br>
+    <button id="save-grades-btn">Save Grades</button>
+    <p id="save-status"></p>
+</div>
+
+    </div>
+
+    <script type="module" src="admin.js"></script>
+</body>
+</html>
