@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+th, td{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+thead th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.passing {
+    color: green;
+    font-weight: bold;
+}
+
+.failing {
+    color: red;
+    font-weight: bold;
+}
